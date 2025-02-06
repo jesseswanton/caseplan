@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { Tab, Tabs, Container } from "react-bootstrap";
-import RiskFactors from "@/components/RiskFactors";
-import ProtectiveFactors from "@/components/ProtectiveFactors";
+import RiskFactors from "./RiskFactors";
+import ProtectiveFactors from "./ProtectiveFactors";
 
 const CasePlanTabs = () => {
   const [key, setKey] = useState("riskFactors");

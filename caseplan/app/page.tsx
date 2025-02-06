@@ -1,4 +1,4 @@
-import CasePlanTabs from "@/components/CasePlanTabs";
+import CasePlanTabs from "./components/CasePlanTabs";
 
 export default function Home() {
   return (
