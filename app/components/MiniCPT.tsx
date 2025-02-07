@@ -11,6 +11,7 @@ interface Question {
   responseType: "dropdown" | "checkbox" | "text";
   options?: string[];
   answer: string | string[];
+  riskLevels?: { [key: string]: "Low" | "Moderate" | "High" }; // added for handling risk levels
 }
 
 const MiniCPT = () => {
@@ -49,7 +50,7 @@ const MiniCPT = () => {
           <Test setTestData={setTestData} testData={testData} />
         </Tab>
         <Tab eventKey="scoring" title="Scoring">
-          <Scoring />
+          <Scoring testData={testData} />
         </Tab>
       </Tabs>
     </div>

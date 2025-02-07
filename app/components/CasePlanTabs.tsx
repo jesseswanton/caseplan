@@ -5,6 +5,11 @@ import { Tab, Tabs, Container } from "react-bootstrap";
 import RiskFactors from "./RiskFactors";
 import ProtectiveFactors from "./ProtectiveFactors";
 import MiniCPT from "./MiniCPT";
+import Worksheet from "./Worksheet";
+import Incentives from "./Incentives";
+import Sanctions from "./Sanctions";
+import Notes from "./Notes";
+import TransitionPlanning from "./TransitionPlanning";
 
 const CasePlanTabs = () => {
   const [key, setKey] = useState("riskFactors");
@@ -27,19 +32,19 @@ const CasePlanTabs = () => {
           <MiniCPT />
         </Tab>
         <Tab eventKey="worksheet" title="Worksheet">
-          <div className="tab-content">Worksheet content goes here.</div>
+          <Worksheet />
         </Tab>
         <Tab eventKey="transitionPlanning" title="Transition Planning">
-          <div className="tab-content">Transition Planning content goes here.</div>
+          <TransitionPlanning />
         </Tab>
         <Tab eventKey="incentives" title="Incentives">
-          <div className="tab-content">Incentives content goes here.</div>
+        <Incentives />
         </Tab>
         <Tab eventKey="sanctions" title="Sanctions">
-          <div className="tab-content">Sanctions content goes here.</div>
+        <Sanctions />
         </Tab>
         <Tab eventKey="notes" title="Notes">
-          <div className="tab-content">Notes content goes here.</div>
+          <Notes />
         </Tab>
       </Tabs>
     </Container>

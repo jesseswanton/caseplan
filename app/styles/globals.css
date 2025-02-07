@@ -148,6 +148,11 @@ a.secondary {
   margin-bottom: 10px;
 }
 
+.worksheet-container {
+  max-height: 700px;
+  overflow-y: auto;
+}
+
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {
   html {
